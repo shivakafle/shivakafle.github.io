@@ -1,0 +1,735 @@
+html {
+  zoom: 0.8;
+  overflow-x: hidden;
+}
+
+.navigation {
+  width: 100%;
+  background: #101820;
+  border-bottom: 1px solid #535353;
+  position: fixed;
+  top: 0%;
+  z-index: 18;
+  box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.137);
+}
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  zoom: 0.9;
+}
+
+.navbar-brand {
+  font-family: Ewert;
+  font-size: 35px !important;
+  line-height: 0;
+  padding: 0;
+}
+
+.nav-link {
+  margin: 10px 15px 0;
+  font-family: Poppins;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  opacity: 0.8;
+  padding: 20px 20px !important;
+}
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+}
+.active {
+  border-bottom-width: 5px;
+  border-image-slice: 1;
+  border-bottom-style: solid;
+  border-image-source: linear-gradient(
+    65deg,
+    rgba(253, 187, 45, 1) 40%,
+    rgba(34, 193, 195, 1) 40%
+  );
+}
+
+.middle {
+  width: 100%;
+  padding: 25vh 0;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.315);
+  background: #101820;
+}
+
+.line {
+  width: 20%;
+  height: 3px;
+  margin: auto;
+  background-image: linear-gradient(to right, #fee715, #101810, #fee715);
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.text {
+  color: #fff;
+}
+.text h1 {
+  font-size: 5.6rem;
+  font-family: Georgia;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  text-shadow: 4px 4px 0px rgba(255, 166, 0, 0.4), 6px 6px 0px rgb(0, 0, 0);
+}
+
+.text p {
+  width: 40%;
+  margin: auto;
+  font-size: 18px;
+  font-family: Poppins;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text .btn {
+  background-color: #fee715;
+  position: relative;
+  z-index: 2;
+  border: none;
+  padding: 10px 40px;
+  overflow: hidden;
+  font-family: Poppins;
+  font-weight: 600;
+  box-shadow: 5px 5px 0px rgba(250, 250, 250, 0.534);
+  transition: all 0.2s linear;
+}
+
+.text .btn::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  content: "";
+  background-color: #35d7fc;
+  transition: all 0.3s linear;
+  z-index: -2;
+}
+
+.text .btn:hover {
+  color: white;
+  box-shadow: 0px 0px 0px white;
+}
+
+.text .btn:hover::before {
+  width: 100%;
+}
+
+.about {
+  z-index: 4;
+  width: 60%;
+  margin: auto;
+  margin-top: -120px;
+  background: #fffdea;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 10px 10px 50px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 60px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+}
+
+.about-me {
+  width: 50%;
+}
+
+.image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.about h3 {
+  font-family: Teko;
+}
+
+.about p {
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.About {
+  width: 80%;
+  margin: auto;
+  animation: zoomeff linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
+  scale: 0.7;
+  opacity: 0;
+}
+@keyframes zoomeff {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.About button {
+  height: 35px;
+  border-radius: 5px;
+  padding: 0 20px;
+  outline: none !important;
+  border: none !important;
+}
+
+.About h2 {
+  font-family: Teko;
+}
+
+.About .card {
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.2),
+    -5px -5px 20px -10px rgba(0, 0, 0, 0.2);
+}
+.About .card .btn {
+  background: #101810;
+}
+.About .card:hover {
+  transform: scale(1.04);
+}
+
+.About .card p {
+  font-family: Poppins;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.about-me .fonts {
+  display: flex;
+  align-items: center;
+}
+
+.about-me .fonts a {
+  color: rgb(0, 33, 59);
+  margin-left: 15px;
+  font-size: 23px;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(199, 199, 199, 0.274);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.about-me .fonts a:hover {
+  background-color: rgb(10, 27, 51);
+  color: rgb(255, 255, 255);
+  transform: rotate(360deg);
+  border-radius: 10px;
+}
+
+.about-me .fonts a:nth-child(1) {
+  margin-left: 0px;
+}
+
+.about-me .cv {
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  margin-left: -10px;
+}
+
+.about-me .cv i {
+  margin: 0 10px;
+}
+
+.about-me .cv:hover {
+  color: rgb(9, 50, 163);
+}
+
+.about-me .fonts .cv i {
+  margin-right: 10px;
+}
+
+.skill {
+  padding: 300px;
+}
+.skill .box {
+  background-color: #101810;
+  padding: 50px;
+  border-radius: 20px;
+  color: #fff;
+}
+.skill .box img {
+  margin-right: 10px;
+}
+.skill .box .row {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  margin-right: 5px;
+}
+.skill div p {
+  font-family: Poppins;
+  font-size: 18px;
+  margin: 0;
+}
+
+.project {
+  width: 100%;
+  animation: zoomeff linear forwards;
+  animation-timeline: view();
+  animation-range: 100px 500px;
+  scale: 1.3;
+  opacity: 0;
+}
+
+.project h2 {
+  font-family: Teko;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.project-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.progress {
+  cursor: pointer;
+  background: #cfcfcf !important;
+}
+
+.progress .progress-bar {
+  position: relative;
+  height: 100%;
+  background-color: rgb(10, 27, 51);
+}
+
+/* .progress-bar::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background: #1f2324;
+  z-index: 22;
+} */
+
+.progress:hover .progress-bar {
+  animation: mov 0.6s linear;
+}
+
+@keyframes mov {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.project-box .card {
+  width: 270px;
+  height: 410px;
+  margin: 10px;
+  transition: all 0.2s linear;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+  box-shadow: 5px 5px 20px -15px rgba(0, 0, 0, 0.4),
+    -5px -5px 20px -15px rgba(0, 0, 0, 0.4);
+}
+
+.project-box .card img {
+  object-position: top;
+  object-fit: cover;
+  transition: all 0.3s linear;
+}
+
+.project-box .card:hover img {
+  transform: scale(1.1);
+}
+
+.project-box .card .cardbody {
+  padding: 10px;
+}
+
+.project-box .card .cardbody h5 {
+  margin: 10px 0;
+  text-align: center;
+  font-family: K2D;
+  font-weight: 700;
+}
+
+.project-box .card .cardbody p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  word-break: break-all;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0 0 0 10px;
+}
+
+.project-box .card .cardbody a {
+  width: 80%;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px 0;
+  color: black;
+  font-weight: 600;
+  font-family: Poppins;
+  transition: all 0.2s linear;
+  position: absolute;
+  left: 50%;
+  bottom: -19%;
+  transform: translate(-50%, 0%);
+  background-color: rgb(255, 136, 0);
+}
+
+.project-box .card:hover .cardbody a {
+  color: white;
+  bottom: 4%;
+}
+.Service {
+  background: #101820;
+  animation: moving linear forwards;
+  animation-timeline: view();
+  animation-range: 10px 400px;
+  transform: translateX(100%);
+  opacity: 0;
+}
+@keyframes moving {
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.Service h2 {
+  font-family: Teko;
+  text-align: center;
+  color: #fff;
+}
+
+.Service .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 15px 15px 20px -18px rgba(0, 0, 0, 0.2),
+    -15px -15px 20px -18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.Service .card:hover {
+  transform: scale(1.05);
+}
+
+.Service .card h4 {
+  font-family: Pragati Narrow;
+  font-weight: 600;
+}
+
+.Service .card h3 {
+  background: #fee715;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+}
+
+.Service .card P {
+  font-family: Poppins;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.hire {
+  /* background: #021e25; */
+
+  text-align: center;
+  padding: 15vh 0;
+  margin: 20px 0;
+  position: relative;
+  z-index: 5;
+}
+
+.hire::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(12, 12, 12, 0.8)
+    ),
+    url(./image/web.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -2;
+  filter: blur(3px);
+}
+
+.hire h2 {
+  font-family: Bitter;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  color: white;
+  font-size: calc(100% - 50%) * 5;
+}
+
+.hire button {
+  padding: 10px 70px;
+  font-family: Poppins;
+  outline: none !important;
+  border: none;
+  font-weight: 600;
+  background-color: rgb(255, 136, 0);
+  color: white;
+  position: relative;
+  z-index: 2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.hire button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  content: "";
+  background-color: rgb(3, 12, 19);
+  transition: all 0.3s linear;
+  z-index: -2;
+}
+
+.hire button:hover::before {
+  width: 100%;
+}
+
+.findMe {
+  width: 100%;
+  text-align: center;
+  padding: 10vh 0 5vh 0;
+}
+
+.findMe h3 {
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.findMe P {
+  width: 40%;
+  margin: 30px auto 0;
+  font-family: Poppins;
+}
+.findMe .fonts {
+  display: flex;
+  justify-content: center;
+}
+.findMe .fonts a {
+  color: black;
+}
+
+.findMe .fonts i {
+  background: rgb(230, 230, 230);
+  border-radius: 100%;
+  margin-top: 30px;
+  transform: scale(1.2);
+  margin-left: 15px;
+  transition: all 0.6s ease;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.findMe .fonts i:hover {
+  background: rgb(3, 12, 19);
+  color: #fff;
+  transform: scale(1.4);
+}
+
+/* for ipad pro */
+@media screen and (max-width: 1100px) and (min-width: 900px) {
+  .middle {
+    padding: 20vh 0;
+  }
+
+  .text p {
+    width: 60%;
+  }
+
+  .about {
+    width: 80%;
+  }
+
+  .hire {
+    padding: 12vh 0;
+  }
+
+  .findMe {
+    padding: 10vh 0 0vh 0;
+  }
+}
+
+/* for mobile */
+@media screen and (max-width: 600px) and (min-width: 280px) {
+  .navigation {
+    z-index: 2;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .text h1 {
+    font-size: 4rem;
+  }
+
+  .text {
+    position: relative;
+  }
+
+  .text::before {
+    position: absolute;
+    top: -80%;
+    left: -20%;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(255, 174, 0, 0.5);
+    z-index: 1;
+    filter: blur(20px);
+  }
+
+  .text::after {
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    content: "";
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(0, 255, 140, 0.4);
+    z-index: 1;
+    filter: blur(20px);
+  }
+
+  .text .line {
+    width: 70%;
+  }
+
+  .text p {
+    width: 80%;
+    font-weight: 500;
+  }
+
+  .about {
+    width: 90%;
+    flex-direction: column;
+    padding: 50px 40px 0 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+      10px 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    position: relative;
+  }
+
+  .about .about-me {
+    width: 100%;
+  }
+
+  .about-me p {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  .about .image {
+    width: 100%;
+    order: 1;
+  }
+
+  .about .image img {
+    width: 80%;
+  }
+
+  .about-me .fonts a:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .findMe P {
+    width: 80%;
+  }
+  .About {
+    width: 95%;
+  }
+  .skill .box {
+    padding: 50px 30px;
+  }
+  .Service {
+    animation: none;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* for ipad  */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .middle {
+    padding: 20vh 0;
+    height: 100%;
+  }
+
+  .line {
+    width: 60%;
+  }
+
+  .middle .text p {
+    width: 70%;
+  }
+
+  .about {
+    width: 90%;
+  }
+
+  .About {
+    width: 90%;
+  }
+
+  .hire {
+    padding: 10vh 0;
+  }
+
+  .findMe P {
+    width: 70%;
+  }
+}
