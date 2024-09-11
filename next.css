@@ -598,9 +598,9 @@ html {
 
 /* for mobile */
 @media screen and (max-width: 600px) and (min-width: 280px) {
-  .navigation {
+  /* .navigation {
     z-index: 2;
-  }
+  } */
 
   .navbar-nav {
     align-items: center;
