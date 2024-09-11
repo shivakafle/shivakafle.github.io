@@ -127,7 +127,7 @@ html {
   width: 60%;
   margin: auto;
   margin-top: -120px;
-  background: #fffdea;
+  background: #ffffff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 10px 10px 50px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -614,7 +614,7 @@ html {
     position: relative;
   }
 
-  .text::before {
+  /* .text::before {
     position: absolute;
     top: -80%;
     left: -20%;
@@ -638,7 +638,7 @@ html {
     background: rgba(0, 255, 140, 0.4);
     z-index: 1;
     filter: blur(20px);
-  }
+  } */
 
   .text .line {
     width: 70%;
