@@ -5,11 +5,10 @@
 }
 html {
   zoom: 0.8;
-  overflow-x: hidden;
+
 }
-.Allpage{
-  width: 100vw;
-  overflow:hidden;
+.AllPage{
+  overflow-x: hidden;
 }
 
 .navigation {
