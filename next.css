@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   zoom: 0.8;
   overflow-x: hidden;
@@ -7,8 +12,8 @@ html {
   width: 100%;
   background: #101820;
   border-bottom: 1px solid #535353;
-  position: fixed;
-  top: 0%;
+  /* position: fixed;
+  top: 0%; */
   z-index: 18;
   box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.137);
 }
@@ -573,6 +578,10 @@ html {
   transform: scale(1.4);
 }
 
+
+
+
+
 /* for ipad pro */
 @media screen and (max-width: 1100px) and (min-width: 900px) {
   .middle {
@@ -585,6 +594,7 @@ html {
 
   .about {
     width: 80%;
+    margin-top: -70px;
   }
 
   .hire {
@@ -596,11 +606,57 @@ html {
   }
 }
 
+/* for ipad  */
+
+
+@media only screen and (max-width: 900px) {
+   
+   .navbar-nav {
+     align-items: center;
+   }
+ 
+   .middle {
+     padding: 20vh 0;
+     height: 100%;
+   }
+ 
+   .line {
+     width: 60%;
+   }
+ 
+   .middle .text p {
+     width: 70%;
+   }
+ 
+   .about {
+     width: 90%;
+     margin-top: -80px;
+     
+   }
+   .about .about-me{
+    padding:40px 0px;
+   }
+ 
+   .About {
+     width: 90%;
+   }
+ 
+   .hire {
+     padding: 10vh 0;
+   }
+ 
+   .findMe P {
+     width: 70%;
+   }
+ }
+
+
+ /* @media only screen and (max-width: 768px) { */
+
+
 /* for mobile */
-@media screen and (max-width: 600px) and (min-width: 280px) {
-  /* .navigation {
-    z-index: 2;
-  } */
+@media only screen and (max-width:600px) {
+  
 
   .navbar-nav {
     align-items: center;
@@ -613,32 +669,6 @@ html {
   .text {
     position: relative;
   }
-
-  /* .text::before {
-    position: absolute;
-    top: -80%;
-    left: -20%;
-    content: "";
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: rgba(255, 174, 0, 0.5);
-    z-index: 1;
-    filter: blur(20px);
-  }
-
-  .text::after {
-    position: absolute;
-    top: 100%;
-    left: 70%;
-    content: "";
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    background: rgba(0, 255, 140, 0.4);
-    z-index: 1;
-    filter: blur(20px);
-  } */
 
   .text .line {
     width: 70%;
@@ -657,6 +687,7 @@ html {
       10px 10px 50px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     position: relative;
+   
   }
 
   .about .about-me {
@@ -695,41 +726,5 @@ html {
     animation: none;
     transform: translateX(0);
     opacity: 1;
-  }
-}
-
-/* for ipad  */
-@media screen and (max-width: 900px) and (min-width: 600px) {
-  .navbar-nav {
-    align-items: center;
-  }
-
-  .middle {
-    padding: 20vh 0;
-    height: 100%;
-  }
-
-  .line {
-    width: 60%;
-  }
-
-  .middle .text p {
-    width: 70%;
-  }
-
-  .about {
-    width: 90%;
-  }
-
-  .About {
-    width: 90%;
-  }
-
-  .hire {
-    padding: 10vh 0;
-  }
-
-  .findMe P {
-    width: 70%;
   }
 }
