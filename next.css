@@ -7,6 +7,10 @@ html {
   zoom: 0.8;
   overflow-x: hidden;
 }
+.Allpage{
+  width: 100vw;
+  overflow:hidden;
+}
 
 .navigation {
   width: 100%;
@@ -71,6 +75,7 @@ html {
   background-image: linear-gradient(to right, #fee715, #101810, #fee715);
   margin-top: 0;
   margin-bottom: 5px;
+  border-radius: 100%;
 }
 .text {
   color: #fff;
