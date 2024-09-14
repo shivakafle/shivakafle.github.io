@@ -434,20 +434,21 @@ html {
     -15px -15px 20px -18px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+  overflow: hidden;
 }
-
-.Service .card:hover {
-  transform: scale(1.05);
+.Service .card .card-body{
+  z-index: 10;
 }
 
 .Service .card h4 {
   font-family: Pragati Narrow;
   font-weight: 600;
 }
+ 
 
 .Service .card h3 {
-  background: #fee715;
-  color: #000000;
+  background: #101820;
+  color: #ffffff;
   width: 40px;
   height: 40px;
   margin: 0 auto 10px;
@@ -457,6 +458,33 @@ html {
   font-weight: 600;
   display: grid;
   place-items: center;
+  transition: all .2s;
+  position: relative
+ 
+}
+.Service .card h3:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0px;
+  width: 100%;
+  height: 100%;
+  background: #101820;
+  z-index: -1;
+  border-radius: 100%;
+  transition: all .7s;
+  
+}
+.Service .card:hover{
+  color: #e6e6e6;
+
+}
+
+.Service .card:hover h3:before{
+  transform: scale(35);
+}
+.Service .card:hover h3{
+  background: orange;
 }
 
 .Service .card P {
@@ -464,74 +492,7 @@ html {
   font-weight: 500;
   word-wrap: break-word;
 }
-
-.hire {
-  /* background: #021e25; */
-
-  text-align: center;
-  padding: 15vh 0;
-  margin: 20px 0;
-  position: relative;
-  z-index: 5;
-}
-
-.hire::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.8),
-      rgba(12, 12, 12, 0.8)
-    ),
-    url(./image/web.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -2;
-  filter: blur(3px);
-}
-
-.hire h2 {
-  font-family: Bitter;
-  font-weight: bolder;
-  margin-bottom: 30px;
-  color: white;
-  font-size: calc(100% - 50%) * 5;
-}
-
-.hire button {
-  padding: 10px 70px;
-  font-family: Poppins;
-  outline: none !important;
-  border: none;
-  font-weight: 600;
-  background-color: rgb(255, 136, 0);
-  color: white;
-  position: relative;
-  z-index: 2;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.hire button::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  content: "";
-  background-color: rgb(3, 12, 19);
-  transition: all 0.3s linear;
-  z-index: -2;
-}
-
-.hire button:hover::before {
-  width: 100%;
-}
+ 
 
 .findMe {
   width: 100%;
