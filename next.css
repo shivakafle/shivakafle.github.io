@@ -1,13 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   zoom: 0.8;
 
 }
-.AllPage{
+
+.AllPage {
   overflow-x: hidden;
 }
 
@@ -43,23 +45,23 @@ html {
   opacity: 0.8;
   padding: 20px 20px !important;
 }
+
 .nav-link:hover {
   color: rgb(255, 255, 255);
 }
+
 .active {
   border-bottom-width: 5px;
   border-image-slice: 1;
   border-bottom-style: solid;
-  border-image-source: linear-gradient(
-    65deg,
-    rgba(253, 187, 45, 1) 40%,
-    rgba(34, 193, 195, 1) 40%
-  );
+  border-image-source: linear-gradient(65deg,
+      rgba(253, 187, 45, 1) 40%,
+      rgba(34, 193, 195, 1) 40%);
 }
 
 .middle {
   width: 100%;
-  padding: 25vh 0;
+  padding: 35vh 0;
   margin: auto;
   overflow: hidden;
   text-align: center;
@@ -76,9 +78,11 @@ html {
   margin-bottom: 5px;
   border-radius: 100%;
 }
+
 .text {
   color: #fff;
 }
+
 .text h1 {
   font-size: 5.6rem;
   font-family: Georgia;
@@ -98,7 +102,7 @@ html {
 }
 
 .text .btn {
-  background-color: #fee715;
+  background-color: #4fbde9;
   position: relative;
   z-index: 2;
   border: none;
@@ -173,6 +177,7 @@ html {
   scale: 0.7;
   opacity: 0;
 }
+
 @keyframes zoomeff {
   to {
     scale: 1;
@@ -200,9 +205,11 @@ html {
   box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.2),
     -5px -5px 20px -10px rgba(0, 0, 0, 0.2);
 }
+
 .About .card .btn {
   background: #101810;
 }
+
 .About .card:hover {
   transform: scale(1.04);
 }
@@ -266,21 +273,25 @@ html {
 .skill {
   padding: 300px;
 }
+
 .skill .box {
   background-color: #101810;
   padding: 50px;
   border-radius: 20px;
   color: #fff;
 }
+
 .skill .box img {
   margin-right: 10px;
 }
+
 .skill .box .row {
   display: flex;
   margin-bottom: 20px;
   align-items: center;
   margin-right: 5px;
 }
+
 .skill div p {
   font-family: Poppins;
   font-size: 18px;
@@ -411,6 +422,7 @@ html {
   color: white;
   bottom: 4%;
 }
+
 .Service {
   background: #101820;
   animation: moving linear forwards;
@@ -419,12 +431,14 @@ html {
   transform: translateX(100%);
   opacity: 0;
 }
+
 @keyframes moving {
   to {
     transform: translateX(0px);
     opacity: 1;
   }
 }
+
 .Service h2 {
   font-family: Teko;
   text-align: center;
@@ -440,7 +454,8 @@ html {
   cursor: pointer;
   overflow: hidden;
 }
-.Service .card .card-body{
+
+.Service .card .card-body {
   z-index: 10;
 }
 
@@ -448,7 +463,7 @@ html {
   font-family: Pragati Narrow;
   font-weight: 600;
 }
- 
+
 
 .Service .card h3 {
   background: #101820;
@@ -464,30 +479,32 @@ html {
   place-items: center;
   transition: all .2s;
   position: relative
- 
 }
-.Service .card h3:before{
+
+.Service .card h3:before {
   content: '';
   position: absolute;
   top: 0;
-  left:0px;
+  left: 0px;
   width: 100%;
   height: 100%;
   background: #101820;
   z-index: -1;
   border-radius: 100%;
   transition: all .7s;
-  
+
 }
-.Service .card:hover{
+
+.Service .card:hover {
   color: #e6e6e6;
 
 }
 
-.Service .card:hover h3:before{
+.Service .card:hover h3:before {
   transform: scale(35);
 }
-.Service .card:hover h3{
+
+.Service .card:hover h3 {
   background: orange;
 }
 
@@ -496,7 +513,7 @@ html {
   font-weight: 500;
   word-wrap: break-word;
 }
- 
+
 
 .findMe {
   width: 100%;
@@ -514,10 +531,12 @@ html {
   margin: 30px auto 0;
   font-family: Poppins;
 }
+
 .findMe .fonts {
   display: flex;
   justify-content: center;
 }
+
 .findMe .fonts a {
   color: black;
 }
@@ -575,53 +594,54 @@ html {
 
 
 @media only screen and (max-width: 900px) {
-   
-   .navbar-nav {
-     align-items: center;
-   }
- 
-   .middle {
-     padding: 20vh 0;
-     height: 100%;
-   }
- 
-   .line {
-     width: 60%;
-   }
- 
-   .middle .text p {
-     width: 70%;
-   }
- 
-   .about {
-     width: 90%;
-     margin-top: -80px;
-     
-   }
-   .about .about-me{
-    padding:40px 0px;
-   }
- 
-   .About {
-     width: 90%;
-   }
- 
-   .hire {
-     padding: 10vh 0;
-   }
- 
-   .findMe P {
-     width: 70%;
-   }
- }
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .middle {
+    padding: 20vh 0;
+    height: 100%;
+  }
+
+  .line {
+    width: 60%;
+  }
+
+  .middle .text p {
+    width: 70%;
+  }
+
+  .about {
+    width: 90%;
+    margin-top: -80px;
+
+  }
+
+  .about .about-me {
+    padding: 40px 0px;
+  }
+
+  .About {
+    width: 90%;
+  }
+
+  .hire {
+    padding: 10vh 0;
+  }
+
+  .findMe P {
+    width: 70%;
+  }
+}
 
 
- /* @media only screen and (max-width: 768px) { */
+/* @media only screen and (max-width: 768px) { */
 
 
 /* for mobile */
 @media only screen and (max-width:600px) {
-  
+
 
   .navbar-nav {
     align-items: center;
@@ -652,7 +672,7 @@ html {
       10px 10px 50px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     position: relative;
-   
+
   }
 
   .about .about-me {
@@ -681,12 +701,15 @@ html {
   .findMe P {
     width: 80%;
   }
+
   .About {
     width: 95%;
   }
+
   .skill .box {
     padding: 50px 30px;
   }
+
   .Service {
     animation: none;
     transform: translateX(0);
