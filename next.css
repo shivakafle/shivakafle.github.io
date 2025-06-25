@@ -61,7 +61,7 @@ html {
 
 .middle {
   width: 100%;
-  padding: 35vh 0;
+  padding: 30vh 0;
   margin: auto;
   overflow: hidden;
   text-align: center;
@@ -73,7 +73,7 @@ html {
   width: 20%;
   height: 3px;
   margin: auto;
-  background-image: linear-gradient(to right, #fee715, #101810, #fee715);
+  background-image: linear-gradient(to right, #ffffff, #77bcd9, #ffffff);
   margin-top: 0;
   margin-bottom: 5px;
   border-radius: 100%;
@@ -110,10 +110,13 @@ html {
   overflow: hidden;
   font-family: Poppins;
   font-weight: 600;
-  box-shadow: 5px 5px 0px rgba(250, 250, 250, 0.534);
+  /* box-shadow: 5px 5px 0px rgba(250, 250, 250, 0.534); */
   transition: all 0.2s linear;
+  outline: 2px solid orange;
+  outline-offset: 3px;
 }
 
+/* 
 .text .btn::before {
   position: absolute;
   top: 0;
@@ -125,10 +128,10 @@ html {
   transition: all 0.3s linear;
   z-index: -2;
 }
-
+*/
 .text .btn:hover {
-  color: white;
-  box-shadow: 0px 0px 0px white;
+  outline-color: #4fbde9;
+  outline-offset: 0px;
 }
 
 .text .btn:hover::before {
@@ -453,6 +456,7 @@ html {
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
   overflow: hidden;
+
 }
 
 .Service .card .card-body {
@@ -502,6 +506,7 @@ html {
 
 .Service .card:hover h3:before {
   transform: scale(35);
+
 }
 
 .Service .card:hover h3 {
