@@ -129,7 +129,6 @@ html {
 */
 .text .btn:hover {
   outline: 2px solid #4fbde9;
-  outline-offset: 2px;
   outline-offset: 3px;
 }
 
