@@ -112,8 +112,6 @@ html {
   font-weight: 600;
   /* box-shadow: 5px 5px 0px rgba(250, 250, 250, 0.534); */
   transition: all 0.2s linear;
-  outline: 2px solid orange;
-  outline-offset: 3px;
 }
 
 /* 
@@ -130,8 +128,9 @@ html {
 }
 */
 .text .btn:hover {
-  outline-color: #4fbde9;
-  outline-offset: 0px;
+  outline: 2px solid #4fbde9;
+  outline-offset: 2px;
+  outline-offset: 3px;
 }
 
 .text .btn:hover::before {
